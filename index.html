@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./Icons/images.jfif">
 </head>
 <body>
 
@@ -100,31 +101,36 @@
   </div>
 
   <!-- FOOTER -->
-  <footer class="footer" id="contact">
-    <div class="footer-section about">
-      <h3>Stackly</h3>
-      <p>Experience the taste of authentic Indian cuisine, served with love and excellence.</p>
-    </div>
+ <footer id="contact">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h3>Stackly</h3>
+          <p>Experience the taste of authentic cuisine, served with love and excellence. We're committed to providing memorable dining experiences.</p>
+  <div class="social-icons">
+  <a href="#"><img src="./Icons/social_14047486f.png" alt="Facebook"></a>
+  <a href="#"><img src="./Icons/instagram_2626270i.png" alt="Instagram"></a>
+  <a href="#"><img src="./Icons/twitter logo.png" alt="Twitter"></a>
+  <a href="#"><img src="./Icons/youtube logo.png" alt="YouTube"></a>
+</div>
 
-    <div class="footer-section contact">
-      <h4>Contact Us</h4>
-      <p><strong>Address:</strong> 123 Spice Street, Food City, India</p>
-      <p><strong>Phone:</strong> +91 9876543210</p>
-      <p><strong>Email:</strong> Stackly@gmail.com</p>
-    </div>
-
-    <div class="footer-section social">
-      <h4>Follow Us</h4>
-      <div class="social-icons">
-        <a href="#"><img src="./Icons/facebook logo.png" alt="Facebook"></a>
-        <a href="#"><img src="./Icons/instagram logo.png" alt="Instagram"></a>
-        <a href="#"><img src="./Icons/twitter logo.png" alt="Twitter"></a>
-        <a href="#"><img src="./Icons/youtube logo.png" alt="YouTube"></a>
+        </div>
+        <div class="footer-section contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Spice Street, Food City, India</p>
+          <p><i class="fas fa-phone"></i> +91 9876543210</p>
+          <p><i class="fas fa-envelope"></i> Stackly@gmail.com</p>
+        </div>
+        <div class="footer-section hours">
+          <h4>Opening Hours</h4>
+          <p>Monday - Friday: 11am - 10pm</p>
+          <p>Saturday - Sunday: 10am - 11pm</p>
+          <p>Holidays: 12pm - 9pm</p>
+        </div>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2025 Stackly. All rights reserved.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Stackly. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #ffcc00;"></i></p>
+      </div>
     </div>
   </footer>
 
@@ -147,6 +153,7 @@ function showNextSlide() {
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add('active');
 }
+
 
 setInterval(showNextSlide, 3000);
     AOS.init({

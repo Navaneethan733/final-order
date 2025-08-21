@@ -84,7 +84,8 @@
 
     /* About Section */
     .about {
-      padding: 8rem 10% 4rem; /* extra padding for navbar */
+      padding: 8rem 10% 4rem; 
+       background: rgba(0, 0, 0, 0.7);/* extra padding for navbar */
     }
     .about-container {
       display: flex;
@@ -96,6 +97,7 @@
       width: 100%;
       max-width: 500px;
       border-radius: 15px;
+      background:  rgb(255, 255, 255);
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
       transition: transform 0.3s ease;
     }
@@ -108,13 +110,14 @@
     .about-text h2 {
       font-size: 2.2rem;
       margin-bottom: 1rem;
-      color: #000;
+      color: #ffffff;
     }
     .about-text span {
       color: #ffcc00;
     }
     .about-text p {
       padding: 1rem;
+      color: #ffffff;
       background-color: rgba(0,0,0,0.05);
       border-radius: 8px;
     }
@@ -141,10 +144,12 @@
       margin-top: 5rem;
       padding: 3rem 10%;
       text-align: center;
+       background: rgba(0, 0, 0, 0.7);
     }
     .chef-section h3 {
       margin-bottom: 2rem;
       font-size: 2rem;
+      color: white;
     }
     .chef-list {
       display: flex;
@@ -175,6 +180,7 @@
   margin-top: 5rem;
   padding: 3rem 10%;
   text-align: center;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .testimonials h3 {
@@ -214,38 +220,11 @@
 
 
     /* Footer */
-    footer {
-      background: #000;
-      color: #aaa;
-      padding: 40px 20px 20px;
-      text-align: center;
-    }
-    .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .footer-section h3, .footer-section h4 {
-      color: #ffcc00;
-      margin-bottom: 10px;
-    }
-    .social-icons {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .social-icons img {
-      width: 30px;
-      transition: transform 0.3s;
-    }
-    .social-icons img:hover {
-      transform: scale(1.1);
-    }
+ 
     .footer-bottom {
+      display: flex;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.7);
       margin-top: 20px;
       font-size: 14px;
       border-top: 1px solid #333;
@@ -346,31 +325,8 @@ Velouté: White stock-based sauce (chicken, fish, or veal).
 
 
 <!-- Footer -->
-<footer>
-  <div class="footer-container">
-    <div class="footer-section">
-      <h3>Stackly</h3>
-      <p>Experience the taste of authentic Indian cuisine, served with love.</p>
-    </div>
-    <div class="footer-section">
-      <h4>Contact</h4>
-      <p>📍 123 Spice Street, India</p>
-      <p>📞 +91 9876543210</p>
-      <p>✉️ Stackly@gmail.com</p>
-    </div>
-    <div class="footer-section">
-      <h4>Follow Us</h4>
-      <div class="social-icons">
-        <a href="#"><img src="./Icons/facebook logo.png" alt="Facebook"></a>
-        <a href="#"><img src="./Icons/instagram logo.png" alt="Instagram"></a>
-        <a href="#"><img src="./Icons/twitter logo.png" alt="Twitter"></a>
-         <a href="#"><img src="./Icons/youtube logo.png" alt="YouTube"></a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">&copy; 2025 Stackly. All rights reserved.</div>
-</footer>
 
+<div class="footer-bottom">&copy; 2025 Stackly. All rights reserved.</div>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({ duration: 1000, once: true });
